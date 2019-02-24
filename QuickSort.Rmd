@@ -1,0 +1,24 @@
+---
+title: "QuickSort"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#QUICK SORT
+
+my_qsort = function(v) {
+  n = length(v)
+  if (n > 1) {
+    pv = v[n %/% 2] # pivot value
+    left = my_qsort(v[v < pv])
+    mid = v[v == pv]
+    right =  my_qsort(v[v > pv])
+    return(c(left, mid, right))
+  }
+  else return(v)
+}
+
+```
+

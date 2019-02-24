@@ -1,0 +1,41 @@
+---
+title: "Eucledian_gcd"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#Euclidean Algorithm: Find the GCD of two integers. Find GCD(54, 888)
+
+888/54
+
+888 = 54(16) + 24
+
+euclid = function(a, b) {
+  if a < b
+  then swap
+  quotient = a%/%b
+  remainder = a%%b
+  smallquo = b%/%remainder
+  smallrem = b%%remainder
+  smallerquo = b%/%smallquo
+  smallerrem = b%%smallrem
+if (remainder == 0) {
+    return(quotient)}
+else if
+(smallrem == 0) {
+    return(smallquo)}
+else if
+  (smallerrem == 0) {
+    return(smallerrem)}
+  }
+
+
+euA = 270
+B = 192
+ 
+euclid(270, 192)
+
+```
+
